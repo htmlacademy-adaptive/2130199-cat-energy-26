@@ -1,1 +1,12 @@
-Папка для шрифтов.
+# Папка для шрифтов
+
+Структура файлов:
+
+```bash
+./
+├── oswaldmedium.woff
+├── oswaldmedium.woff2
+├── oswaldregular.woff
+├── oswaldregular.woff2
+└── README
+```

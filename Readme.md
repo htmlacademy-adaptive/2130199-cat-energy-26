@@ -1,5 +1,7 @@
 # Личный проект «Кэт энерджи»
 
+[![][check-image]][check-url]
+
 * Студент: [Александр Рудасёв](https://up.htmlacademy.ru/adaptive/26/user/2130199).
 * Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
@@ -7,22 +9,26 @@
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
-Полезный файл:
+Полезный файл: [Contributing.md](Contributing.md) — руководство по внесению изменений.
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+_Не удаляйте и не обращайте внимание на файлы:_
+- `.editorconfig`,
+- `.gitattributes`,
+- `.gitignore`,
+- `.stylelintrc`,
+- `.travis.yml`,
+- `package-lock.json`,
+- `package.json`.
 
 ---
 
-### Памятка
+## Памятка
 
-#### 1. Зарегистрируйтесь на Гитхабе
+### 1. Зарегистрируйтесь на Гитхабе
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
 
-#### 2. Создайте форк
+### 2. Создайте форк
 
 [Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/2130199-cat-energy-26) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
@@ -40,13 +46,13 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 Клонировать репозиторий можно так:
 
-```
+```bash
 git clone SSH-адрес_вашего_форка
 ```
 
 Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
 
-#### 4. Начинайте обучение!
+### 4. Начинайте обучение!
 
 ---
 
