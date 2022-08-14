@@ -3,7 +3,61 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент страницы формы
+<main class="main-form">
+	<h1 class="main-container__form-title ">Подбор программы</h1>
+	<section class="form">
+		<form class="form__filter" action="https://echo.htmlacademy.ru/" method="get">
+		<fieldset class="form__fieldset">
+			<legend class="form__legend"><b>Заполните анкету, и мы подберем <br> программу питания для вашего кота</b></legend>
+			<label class="form__label">ИМЯ:* <input type="text" required placeholder="БАРСИК"></label>
+			<label class="form__label">ВЕС(КГ):* <input type="text" required placeholder="7"></label>
+			<label class="form__label">ВОЗРАСТ(ЛЕТ):* <input type="text" required placeholder="7"></label>
+		</fieldset>
+		<fieldset class="form__fieldset">
+			<legend class="form__legend"></legend>
+			<label class="form__label"><input class="form-input" type="radio" name="choice" value="Похудение" checked>
+				Похудение
+			</label>
+			<label class="form__label"><input class="form-input" type="radio" name="choice" value="Набор массы">
+				Набор массы
+			</label>
+			<label class="form__label"><input class="form-input" type="radio" name="choice" value="Не знаю (Нужен ваш совет)">
+				Не знаю (Нужен ваш совет)
+			</label>
+		</fieldset>
+		<fieldset class="form__fieldset">
+			<legend class="form__legend"><b>Контактные данные <br> (владельца кота)</b></legend>
+			<label class="form__label">EMAIL:* <input type="email" required placeholder="kuklachev@gmail.com"></label>
+			<div class="form__fieldset-icon">
+				<img class="form__fieldset-icon-email" src="#" width="20" height="14" alt="Конверт">
+			</div>
+			<label class="form__label">Телефон:* <input type="tel" required placeholder="8 (960) 900-60-90"></label>
+			<div class="form__fieldset-icon">
+				<img class="form__fieldset-icon-email" src="#" width="20" height="20" alt="Телефон">
+			</div>
+		</fieldset>
+		<fieldset class="form__fieldset">
+			<legend class="form__legend"><b>Комментарий</b></legend>
+				<textarea class="form__textarea">Расскажите обо всех повадках кота</textarea>
+		</fieldset>
+		<fieldset class="form__fieldset-extra">
+			<legend class="form__legend-extra"></legend>
+			<label class="form__label-extra"><input class="form-input-extra" type="checkbox" name="choice" value="Сахарозаменитель" checked>
+				Сахарозаменитель
+			</label>
+			<label class="form__label-extra"><input class="form-input-extra" type="checkbox" name="choice" value="Питьевая вода">
+				Питьевая вода
+			</label>
+			<label class="form__label-extra"><input class="form-input-extra" type="checkbox" name="choice" value="Молоко">
+				Молоко
+			</label>
+			<label class="form__label-extra"><input class="form-input-extra" type="checkbox" name="choice" value="Витамины">
+				Витамины
+			</label>
+		</fieldset>
+		<a class="button button__form-order" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+		<p class="form__note">* — Обязательные поля</p>
+		</form>
+	</section>
 </main>
 {% endblock %}
