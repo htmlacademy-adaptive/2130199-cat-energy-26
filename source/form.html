@@ -3,9 +3,10 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main class="main-form">
+<main class="main-container">
 	<h1 class="main-container__form-title ">Подбор программы</h1>
 	<section class="form">
+		<h2 class="visually-hidden">Заполнение формы</h2>
 		<form class="form__filter" action="https://echo.htmlacademy.ru/" method="get">
 		<fieldset class="form__fieldset">
 			<legend class="form__legend"><b>Заполните анкету, и мы подберем <br> программу питания для вашего кота</b></legend>
@@ -28,18 +29,14 @@
 		<fieldset class="form__fieldset">
 			<legend class="form__legend"><b>Контактные данные <br> (владельца кота)</b></legend>
 			<label class="form__label">EMAIL:* <input type="email" required placeholder="kuklachev@gmail.com"></label>
-			<div class="form__fieldset-icon">
-				<img class="form__fieldset-icon-email" src="#" width="20" height="14" alt="Конверт">
-			</div>
+				<span class="form__fieldset-icon-email"></span>
 			<label class="form__label">Телефон:* <input type="tel" required placeholder="8 (960) 900-60-90"></label>
-			<div class="form__fieldset-icon">
-				<img class="form__fieldset-icon-email" src="#" width="20" height="20" alt="Телефон">
-			</div>
+				<span class="form__fieldset-icon-phone"></span>
 		</fieldset>
-		<fieldset class="form__fieldset">
-			<legend class="form__legend"><b>Комментарий</b></legend>
+		<div class="form__fieldset">
+			<label class="form__legend"><b>Комментарий</b></label>
 				<textarea class="form__textarea">Расскажите обо всех повадках кота</textarea>
-		</fieldset>
+		</div>
 		<fieldset class="form__fieldset-extra">
 			<legend class="form__legend-extra"></legend>
 			<label class="form__label-extra"><input class="form-input-extra" type="checkbox" name="choice" value="Сахарозаменитель" checked>
