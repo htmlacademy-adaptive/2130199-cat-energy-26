@@ -6,13 +6,11 @@ import twig from "gulp-twig";
 import htmlmin from "gulp-htmlmin";
 import { htmlValidator } from "gulp-w3c-html-validator";
 import bemlinter from "gulp-html-bemlinter";
-import sass from "gulp-dart-sass";
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
 import svgSprite from "gulp-svg-sprite";
 import postcss from "gulp-postcss";
 import postUrl from "postcss-url";
-import postImport from "postcss-import";
-import postScss from "postcss-scss";
-import postCustomMedia from "postcss-custom-media";
 import autoprefixer from "autoprefixer";
 import csso from "postcss-csso";
 import terser from "gulp-terser";
@@ -21,6 +19,7 @@ import { deleteAsync } from "del";
 import gulpIf from "gulp-if";
 
 const { src, dest, watch, series, parallel } = gulp;
+const sass = gulpSass(dartSass);
 data.isDevelopment = true;
 
 export function processMarkup() {
@@ -43,13 +42,13 @@ export function validateMarkup(done) {
 export function processStyles() {
 	return src("./source/sass/*.scss", { sourcemaps: data.isDevelopment })
 		.pipe(plumber())
+		.pipe(sass({
+			functions: {
+				"getbreakpoint($bp)": (bp) => new dartSass.types.Number(data.viewports[bp.getValue()])
+			}
+		}).on("error", sass.logError))
 		.pipe(postcss([
-			postImport(),
-			postUrl(),
-			postCustomMedia()
-		], { syntax: postScss }))
-		.pipe(sass().on("error", sass.logError))
-		.pipe(postcss([
+			postUrl({ assetsPath: "../" }),
 			autoprefixer(),
 			csso()
 		]))
@@ -67,11 +66,6 @@ export function processScripts() {
 export function optimizeImages() {
 	return src("./source/img/**/*.{png,jpg}")
 		.pipe(gulpIf(!data.isDevelopment, squoosh()))
-		.pipe(dest("build/img"))
-}
-
-export function copyImages() {
-	return src("./source/img/**/*.{png,jpg}")
 		.pipe(dest("build/img"))
 }
 
