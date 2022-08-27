@@ -1,0 +1,135 @@
+.plans__title--icon-weight-loss {
+	&::before {
+		content: "";
+		display: block;
+		width: 50px;
+		height: 50px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
+
+.plans__title--icon-weight-gain {
+	&::before {
+		content: "";
+		display: block;
+		width: 50px;
+		height: 50px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
+
+.features__item--icon-leaf {
+	&::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+		background-color: #68b738;
+	}
+}
+
+.features__item--icon-bottle {
+	&::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+		background-color: #68b738;
+	}
+}
+
+.features__item--icon-tableware {
+	&::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+		background-color: #68b738;
+	}
+}
+
+.features__item--icon-alarm {
+	&::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+		background-color: #68b738;
+	}
+}
+
+.social__link--vkontakte {
+	&::before {
+		content: "";
+		display: block;
+		width: 27px;
+		height: 17px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
+
+.social__link--youtube {
+	&::before {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 19px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
+
+.social__link--telegram {
+	&::before {
+		content: "";
+		display: block;
+		width: 20px;
+		height: 17px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
+
+.copyright__icon {
+	&::before {
+		content: "";
+		display: block;
+		width: 27px;
+		height: 34px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
+
+.catalog__product-card-more-icon {
+	&::before {
+		content: "";
+		display: block;
+		width: 30px;
+		height: 30px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
+
+.catalog__extra-icon-gift {
+	&::before {
+		content: "";
+		display: block;
+		width: 78px;
+		height: 80px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}

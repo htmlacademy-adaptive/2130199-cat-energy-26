@@ -4,12 +4,12 @@
 
 {% block main %}
 <main class="main-container">
-	<h1 class="main-container__form-title ">Подбор программы</h1>
+	<h1 class="main-container__form-title">Подбор программы</h1>
 	<section class="form">
 		<h2 class="visually-hidden">Заполнение формы</h2>
 		<form class="form__filter" action="https://echo.htmlacademy.ru/" method="get">
 			<fieldset class="form__fieldset">
-				<legend class="form__legend"><b>Заполните анкету, и мы подберем <br> программу питания для вашего кота</b></legend>
+				<legend class="form__legend-questionnaire">Заполните анкету, и мы подберем <br> программу питания для вашего кота</legend>
 				<label class="form__label">ИМЯ:* <input type="text" required placeholder="БАРСИК"></label>
 				<label class="form__label">ВЕС(КГ):* <input type="text" required placeholder="7"></label>
 				<label class="form__label">ВОЗРАСТ(ЛЕТ):* <input type="text" required placeholder="7"></label>
@@ -27,18 +27,18 @@
 				</label>
 			</fieldset>
 			<fieldset class="form__fieldset">
-				<legend class="form__legend"><b>Контактные данные <br> (владельца кота)</b></legend>
+				<legend class="form__legend">Контактные данные <br> (владельца кота)</legend>
 				<label class="form__label">EMAIL:* <input type="email" required placeholder="kuklachev@gmail.com">
 					<span class="form__fieldset-icon-email"></span></label>
 				<label class="form__label">Телефон:* <input type="tel" required placeholder="8 (960) 900-60-90">
 					<span class="form__fieldset-icon-phone"></span></label>
 			</fieldset>
 			<div class="form__fieldset">
-				<label class="form__legend" for="textarea"><b>Комментарий</b></label>
+				<label class="form__legend" for="textarea">Комментарий</label>
 				<textarea class="form__textarea" id="textarea">Расскажите обо всех повадках кота</textarea>
 			</div>
 			<fieldset class="form__fieldset-extra">
-				<legend class="form__legend-extra"></legend>
+				<legend class="form__legend-extra">Дополнительно</legend>
 				<label class="form__label-extra"><input class="form-input-extra" type="checkbox" name="choice" value="Сахарозаменитель" checked>
 					Сахарозаменитель
 				</label>
