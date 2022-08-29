@@ -38,3 +38,25 @@
 	line-height: 18px;
 	font-weight: 400;
 }
+
+.plans__title--icon-weight-loss {
+	&::before {
+		content: "";
+		display: block;
+		width: 50px;
+		height: 50px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
+
+.plans__title--icon-weight-gain {
+	&::before {
+		content: "";
+		display: block;
+		width: 50px;
+		height: 50px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}

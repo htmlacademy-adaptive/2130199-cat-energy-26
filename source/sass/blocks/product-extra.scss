@@ -35,3 +35,14 @@
 .product-extra__background {
 	background-color: #68b738d9;
 }
+
+.product-extra__gift-icon {
+	&::before {
+		content: "";
+		display: block;
+		width: 78px;
+		height: 80px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}

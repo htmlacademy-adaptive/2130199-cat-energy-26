@@ -1,0 +1,40 @@
+.main-footer__social {
+	background-color: #f2f2f2;
+}
+
+.main-footer__copyright {
+	background-color: #f2f2f2;
+}
+
+.social__link--vkontakte {
+	&::before {
+		content: "";
+		display: block;
+		width: 27px;
+		height: 17px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
+
+.social__link--youtube {
+	&::before {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 19px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
+
+.social__link--telegram {
+	&::before {
+		content: "";
+		display: block;
+		width: 20px;
+		height: 17px;
+		outline: 1px dashed;
+		outline-offset: -1px;
+	}
+}
